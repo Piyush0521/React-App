@@ -1,13 +1,203 @@
-body {
+* {
+  font-family: "Quicksand", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+html {
+  margin-bottom: 50px;
+}
+nav.navbar {
+  background-color: rgb(194, 190, 190);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  padding-top: 30px;
+  /* margin-left: 40px; */
+  display: flex;
+  justify-content: center;
+}
+
+div.button {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  justify-content: center;
+}
+
+button.btn,
+button.new-btn {
+  padding: 5px;
+  background-color: rgb(115, 115, 212);
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  width: 120px;
+  height: 60px;
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+button.btn:hover {
+  background-color: rgb(54, 54, 95);
+}
+
+div.section1 h2,
+div.dashboard h2 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+div.section1 h2,
+div.dashboard h2 {
+  background-color: rgb(173, 173, 173);
+  border-top: 5px solid gray;
+}
+
+div.hero-list a {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 5px;
+  padding: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+div.hero-list p.id {
+  margin-right: 5px;
+  background-color: gray;
+  height: 25px;
+  width: 20px;
+  border-radius: 5px 0px 0px 5px;
+  padding: 8px 2px 0px 10px;
+  font-weight: 600;
+  color: black;
+}
+div.hero-list p.name {
+  background-color: rgb(184, 179, 179);
+  height: 25px;
+  width: fit-content;
+  border-radius: 0px 5px 5px 0px;
+  padding: 8px 10px 0px 5px;
+  font-weight: 600;
+  color: rgb(66, 66, 146);
+  width: 150px;
+}
+
+div.hero-list p.name:hover {
+  background-color: rgb(11, 11, 49);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+div.hero-details {
+  margin: 20px 0px 0px 50px;
+}
+div.hero-details p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+div.hero-details .input input {
+  margin-bottom: 10px;
+  height: 25px;
+  padding: 5px;
+  width: fit-content;
+}
+div.hero-details .btn {
+  margin-right: 10px;
+}
+div.hero-details .back-btn,
+div.hero-details .save-btn,
+button.new-btn,
+button.add-btn {
+  margin-right: 20px;
+  width: 50px;
+  height: 25px;
+  font-weight: 400;
+  background-color: rgb(105, 150, 233);
+  border: none;
+  border-radius: 5px;
+}
+p {
+  font-weight: 700;
+}
+div.hero-details p.input {
+  font-weight: 700;
+  padding: 5px;
+  height: 30px;
+}
+div.hero-details .back-btn:hover,
+div.hero-details .save-btn:hover,
+button.delete-btn:hover,
+button.add-btn:hover {
+  cursor: pointer;
+  font-weight: 400;
+  width: 55px;
+  height: 30px;
+}
+div.hero-list {
+  display: flex;
+  flex-direction: row;
+}
+button.new-btn {
+  width: 80px;
+  height: 40px;
+  margin-left: 100px;
+}
+button.new-btn:hover {
+  width: 100px;
+  height: 44px;
+}
+button.delete-btn {
+  width: 50px;
+  height: 30px;
+  margin-top: 15px;
+  background-color: rgb(241, 241, 109);
+  border: 2px solid rgb(204, 204, 31);
+  border-radius: 8px;
+}
+button.delete-btn:hover {
+  background-color: rgb(146, 146, 52);
+  color: white;
+}
+div.top-heroes {
+  margin: 5px 5px 0px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 2px solid rgb(173, 169, 169);
+  padding-bottom: 30px;
+}
+
+div.top-heroes-1 h3 {
+  background-color: rgb(216, 119, 216);
+  margin: 6px;
+  padding: 20px 35px;
+  border-radius: 15px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  width: 80px;
+  height: 30px;
+  margin-top: 50px;
+}
+
+div.top-heroes h3:hover {
+  background-color: rgb(70, 35, 70);
+  color: white;
+  cursor: pointer;
+}
+
+input {
+  border: 3px solid blue;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+button.add-btn {
+  margin-left: 120px;
+}
+
+a {
+  text-decoration: none;
 }
